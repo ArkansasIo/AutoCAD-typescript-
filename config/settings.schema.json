@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TypeCAD Settings",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "theme": {
+      "type": "string",
+      "enum": [
+        "dark",
+        "light",
+        "system"
+      ]
+    },
+    "units": {
+      "type": "string",
+      "enum": [
+        "mm",
+        "cm",
+        "m",
+        "in",
+        "ft"
+      ]
+    },
+    "autosaveSeconds": {
+      "type": "integer",
+      "minimum": 5,
+      "maximum": 600
+    },
+    "maxUndoSteps": {
+      "type": "integer",
+      "minimum": 10,
+      "maximum": 1000
+    },
+    "gridVisible": {
+      "type": "boolean"
+    },
+    "snapEnabled": {
+      "type": "boolean"
+    },
+    "orthoEnabled": {
+      "type": "boolean"
+    },
+    "polarTrackingEnabled": {
+      "type": "boolean"
+    },
+    "dynamicInputEnabled": {
+      "type": "boolean"
+    },
+    "confirmDestructiveActions": {
+      "type": "boolean"
+    }
+  }
+}
