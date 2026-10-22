@@ -1,7 +1,5 @@
-# WolfMain Alpha math integration
+# WolfMain Alpha integration
 
-The original WolfMain Alpha package/source and API were not supplied with this task. TypeCAD therefore includes an **adapter boundary and native fallback**, not a claim to include the external library.
+The upstream WolfMain Alpha package/source/API was not supplied. TypeCAD includes `src/math/WolfMainAlphaAdapter.ts` as an interface and native numeric fallback, not the original library.
 
-The adapter in `src/math/WolfMainAlphaAdapter.ts` covers vector distance, dot/cross products, normalization, floating-point tolerance, clamping, line length and circle area. Replace the fallback with official exports only after checking the upstream source, version and license.
-
-Planned integration areas: vectors/matrices, affine transforms, line and circle intersections, bounding boxes, curve tessellation, units, robust predicates, parametric equation solving and 3D transforms. Production CAD needs topology support and extensive numerical robustness tests.
+When the real API is available, verify provenance/version/license, map official operations to the adapter and add reference tests for tolerances, degenerate vectors and geometry intersections. Planned math areas include vector/matrix algebra, transforms, robust predicates, curve functions, units, spatial bounds and parametric constraints.
