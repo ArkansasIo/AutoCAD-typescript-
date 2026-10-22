@@ -1,8 +1,8 @@
-# Starter TCS example
+# Restricted TypeCAD Script example
 layer GRID #64748b
 line 0 0 100 0
 line 0 20 100 20
 line 0 40 100 40
 line 0 60 100 60
 circle 50 50 15
-log "Example geometry statements processed"
+log "Generated starter geometry"
