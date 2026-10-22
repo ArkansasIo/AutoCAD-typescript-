@@ -1,7 +1,5 @@
 # TypeCAD terminal subsystem
 
-The CAD command prompt is in the browser workspace. A future desktop or CLI terminal can reuse the shared CommandManager API.
+The editor command prompt shares a registry with UI command handlers. Implemented paths include basic primitive activation, undo/redo, JSON open/save, limited DXF export, layer/workplane entry, help and restricted TCS execution.
 
-Planned: command history, autocomplete, aliases, argument validation, cancellation, progress reporting, TCS/Lua commands, logs, diagnostics, settings profiles and a background job queue for imports/exports.
-
-Do not run arbitrary operating-system shell strings from the in-app CAD prompt. Developer shell integration must be a separate opt-in tool with explicit permissions.
+Planned: command history, autocomplete, argument validation, cancellation, progress events, Lua runtime, macro manager, diagnostic logs and background file jobs. OS shell execution must remain separate from CAD commands.
