@@ -1,5 +1,5 @@
-# WolfMain Alpha — TypeCAD adapter
+# WolfMain Alpha — TypeCAD integration boundary
 
-This directory documents the integration boundary for the WolfMain Alpha math library. The upstream source/API has not yet been provided. TypeCAD does not claim the adapter shim is the original library.
+The upstream WolfMain Alpha source/API was not supplied. TypeCAD includes an adapter contract and fallback math helpers only, not the original external library. See `src/math/WolfMainAlphaAdapter.ts` and `docs/WOLFMAIN_ALPHA.md`.
 
-See `src/math/WolfMainAlphaAdapter.ts`. Planned math modules: vectors/matrices, transforms, line and circle intersections, bounds, unit conversion, curve helpers, robust predicates and parametric equations.
+Planned modules: vectors/matrices, transforms, intersections, curve math, spatial bounds, tolerances, units and constraint equations.

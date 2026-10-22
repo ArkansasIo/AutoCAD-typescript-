@@ -1,7 +1,7 @@
 # TypeCAD terminal subsystem
 
-The user-facing CAD prompt is part of the browser workspace. Future desktop/CLI terminal can reuse CommandManager.
+The CAD command prompt is in the browser workspace. A future desktop or CLI terminal can reuse the shared CommandManager API.
 
-Planned: history, autocomplete, aliases, argument validation, cancellation, progress, TCS/Lua commands, logging, diagnostics, configuration profiles and a task queue for long-running imports and exports.
+Planned: command history, autocomplete, aliases, argument validation, cancellation, progress reporting, TCS/Lua commands, logs, diagnostics, settings profiles and a background job queue for imports/exports.
 
-Do not execute arbitrary OS shell strings from the in-app drawing prompt. Developer shell integration must be a separate opt-in tool with OS-level permissions.
+Do not run arbitrary operating-system shell strings from the in-app CAD prompt. Developer shell integration must be a separate opt-in tool with explicit permissions.
