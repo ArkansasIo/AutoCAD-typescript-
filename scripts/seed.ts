@@ -1,0 +1,1 @@
+import {pool} from "../server/db";async function main():Promise<void>{console.log("Non-destructive seed; no default credentials created.");await pool.end();}main().catch((e:unknown)=>{console.error(e);process.exitCode=1;});
