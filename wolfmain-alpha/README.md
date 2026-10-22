@@ -1,5 +1,3 @@
-# WolfMain Alpha — TypeCAD integration boundary
+# WolfMain Alpha adapter
 
-The upstream WolfMain Alpha source/API was not supplied. TypeCAD includes an adapter contract and fallback math helpers only, not the original external library. See `src/math/WolfMainAlphaAdapter.ts` and `docs/WOLFMAIN_ALPHA.md`.
-
-Planned modules: vectors/matrices, transforms, intersections, curve math, spatial bounds, tolerances, units and constraint equations.
+The upstream WolfMain Alpha source/API was not supplied. TypeCAD provides an adapter boundary and native fallback at `src/math/WolfMainAlphaAdapter.ts`, not the external library itself. Planned domains include vector/matrix operations, coordinate transforms, intersections, curves, bounds, units, tolerances and parametric equations.
