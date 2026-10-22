@@ -1,0 +1,2 @@
+import "dotenv/config";import{readFile}from"node:fs/promises";import mysql from"mysql2/promise";
+const{DB_HOST,DB_USER,DB_PASSWORD}=process.env;if(!DB_HOST||!DB_USER||!DB_PASSWORD)throw new Error("Set DB_HOST, DB_USER and DB_PASSWORD in .env");const sql=await readFile(new URL("../db/schema.sql",import.meta.url),"utf8"),conn=await mysql.createConnection({host:DB_HOST,user:DB_USER,password:DB_PASSWORD,multipleStatements:true});try{await conn.query(sql);console.log("TypeCAD schema applied");}finally{await conn.end();}
