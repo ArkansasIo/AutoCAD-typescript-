@@ -1,5 +1,5 @@
 # Terminal and scripting
 
-The terminal uses the common command registry. It supports basic tool activation, undo/redo, JSON open/save, limited DXF export, layer/workplane creation, help and the restricted TCS prompt.
+The command prompt uses the shared command registry and currently supports primitive tool activation, undo/redo, JSON open/save, limited DXF export, layer/workplane creation, help and a restricted TCS prompt.
 
-Planned: command history, autocomplete, named arguments, cancellation, progress, script transactions, diagnostic logs, Lua VM integration and background import/export jobs. OS shell execution is separate from the CAD command language.
+Planned features: command history, autocomplete, typed arguments, cancellation, progress, script transactions, diagnostic logs, Lua VM and background import/export. Never execute arbitrary OS shell strings from the drawing command language.
