@@ -1,6 +1,5 @@
 # TypeCAD scripting
 
-- **TCS** is a TypeCAD-owned, restricted command grammar. The starter runtime supports line, circle, rectangle, layer and log statements. It is not a general-purpose language.
-- **Lua** is the planned general-purpose script VM. `lua/typecad/init.lua` demonstrates an object-oriented Drawing/Entity API; production execution requires a maintained Lua VM binding and a security-reviewed sandbox.
-- Scripts must call the restricted CAD API, never private document internals. Enforce time, memory, instruction, source-size, output-size and generated-entity limits.
-- Do not use eval or translate arbitrary Lua into JavaScript. Disable OS/file/network/process/native-module/debug access by default and only expose allowlisted virtual modules.
+TCS is a restricted TypeCAD-owned command language. The current parser supports line, circle, rectangle, layer and log statements with numeric/source/instruction limits. It never evaluates arbitrary JavaScript.
+
+Lua is intended as the general OOP extension language. `lua/typecad/init.lua` is an example API, not an embedded runtime. Integrate a maintained Lua VM and reviewed sandbox before executing scripts. Disable shell, process, filesystem, network, package/native-module and debug access by default; cap runtime resources and make drawing changes transactional/undoable.
