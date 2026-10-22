@@ -1,12 +1,12 @@
 flowchart LR
- DESIGNER((Designer)) --> DRAW[Create and edit geometry]
- DESIGNER --> LAYER[Manage layers]
- DESIGNER --> PLANE[Create/select workplanes]
- DESIGNER --> SCRIPT[Run TCS commands]
- DESIGNER --> EXPORT[Export drawing]
- ADMIN((Admin)) --> ROLES[Manage access roles]
- ADMIN --> AUDIT[Review audit records]
- DRAW --> MODEL[(Drawing model)]
- PLANE --> MODEL
- SCRIPT --> SAFE[Restricted script API]
- EXPORT --> FORMAT[JSON and DXF adapters]
+ Designer((Designer)) --> Draw[Draw / edit geometry]
+ Designer --> Layers[Manage layers]
+ Designer --> Planes[Manage workplanes]
+ Designer --> Script[Run TCS scripts]
+ Designer --> Export[Export supported formats]
+ Admin((Administrator)) --> Roles[Manage access roles]
+ Admin --> Audit[Review audit records]
+ Draw --> Model[(Drawing model)]
+ Planes --> Model
+ Script --> Sandbox[Restricted CAD API]
+ Export --> Formats[JSON / DXF adapters]
