@@ -1,0 +1,35 @@
+erDiagram
+ USERS ||--o{ PROJECTS : owns
+ PROJECTS ||--o{ DRAWINGS : contains
+ DRAWINGS ||--o{ DRAWING_LAYERS : defines
+ DRAWINGS ||--o{ DRAWING_ENTITIES : contains
+ DRAWINGS ||--o{ DRAWING_REVISIONS : versions
+ USERS ||--o{ DRAWING_REVISIONS : authors
+ USERS { bigint id PK
+ varchar email
+ varchar password_hash
+ }
+ PROJECTS { bigint id PK
+ bigint owner_user_id FK
+ varchar name
+ }
+ DRAWINGS { bigint id PK
+ bigint project_id FK
+ varchar name
+ varchar units
+ }
+ DRAWING_LAYERS { bigint id PK
+ bigint drawing_id FK
+ varchar name
+ json properties
+ }
+ DRAWING_ENTITIES { bigint id PK
+ bigint drawing_id FK
+ varchar entity_type
+ json geometry
+ }
+ DRAWING_REVISIONS { bigint id PK
+ bigint drawing_id FK
+ bigint author_user_id FK
+ json snapshot
+ }
