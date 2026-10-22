@@ -1,3 +1,12 @@
 # Documentation index
 
-See architecture, feature coverage, menus/tools, commands, plane hierarchy, database, security, settings and WolfMain Alpha integration in the Markdown files in this directory. Mermaid diagrams are under `../uml/`.
+- Architecture: `ARCHITECTURE.md`
+- Feature status: `FEATURE_MATRIX.md`
+- Menus and tools: `MENU_TOOL_MAP.md`
+- Commands and terminal: `COMMANDS.md`, `TERMINAL.md`
+- Planes/subplanes: `PLANE_SYSTEM.md`
+- MySQL: `DATABASE.md`
+- Settings: `SETTINGS.md`
+- Security: `SECURITY.md`
+- WolfMain Alpha: `WOLFMAIN_ALPHA.md`
+- UML: `UML.md
