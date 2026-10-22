@@ -1,0 +1,27 @@
+classDiagram
+ class CadPlane {
+  +id: string
+  +name: string
+  +parentId: string
+  +origin: Vec3
+  +normal: Vec3
+  +up: Vec3
+  +visible: boolean
+  +locked: boolean
+  +gridSpacing: number
+ }
+ class PlaneManager {
+  +all()
+  +get(id)
+  +children(id)
+  +ancestry(id)
+  +basis(id)
+  +toWorld(id,coords)
+  +fromWorld(id,point)
+ }
+ class CadDocument {
+  +planes: CadPlane[]
+  +activePlaneId: string
+ }
+ CadDocument "1" o-- "1..*" CadPlane
+ PlaneManager ..> CadPlane
