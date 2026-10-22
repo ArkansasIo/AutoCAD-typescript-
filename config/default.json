@@ -1,0 +1,35 @@
+{
+  "application": {
+    "name": "TypeCAD",
+    "version": "0.2.0",
+    "autosaveSeconds": 15,
+    "maxUndoSteps": 100
+  },
+  "units": [
+    "mm",
+    "cm",
+    "m",
+    "in",
+    "ft"
+  ],
+  "viewport": {
+    "background": "#101923",
+    "gridColor": "#203142",
+    "axisColor": "#31475c",
+    "antiAlias": true
+  },
+  "input": {
+    "dynamicInput": true,
+    "objectSnap": false,
+    "polarTracking": false,
+    "ortho": false
+  },
+  "storage": {
+    "browserLocalStorage": true,
+    "serverSync": false
+  },
+  "security": {
+    "requireAuthenticationForApi": true,
+    "neverExposeDatabaseCredentialsToClient": true
+  }
+}
