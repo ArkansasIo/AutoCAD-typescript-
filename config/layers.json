@@ -1,0 +1,36 @@
+{
+  "defaultLayer": {
+    "name": "0",
+    "color": "#dbe7f3",
+    "visible": true,
+    "locked": false,
+    "lineType": "CONTINUOUS"
+  },
+  "recommendedLayers": [
+    {
+      "name": "CONSTRUCTION",
+      "color": "#64748b",
+      "lineType": "DASHED"
+    },
+    {
+      "name": "OBJECTS",
+      "color": "#dbe7f3",
+      "lineType": "CONTINUOUS"
+    },
+    {
+      "name": "DIMENSIONS",
+      "color": "#f4b860",
+      "lineType": "CONTINUOUS"
+    },
+    {
+      "name": "ANNOTATIONS",
+      "color": "#7dd3fc",
+      "lineType": "CONTINUOUS"
+    },
+    {
+      "name": "HIDDEN",
+      "color": "#94a3b8",
+      "lineType": "DASHED"
+    }
+  ]
+}
