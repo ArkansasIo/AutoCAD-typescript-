@@ -1,0 +1,62 @@
+{
+  "aliases": {
+    "LINE": [
+      "L"
+    ],
+    "CIRCLE": [
+      "C"
+    ],
+    "RECTANGLE": [
+      "REC"
+    ],
+    "PLINE": [
+      "PL"
+    ],
+    "MOVE": [
+      "M"
+    ],
+    "COPY": [
+      "CO"
+    ],
+    "ROTATE": [
+      "RO"
+    ],
+    "SCALE": [
+      "SC"
+    ],
+    "MIRROR": [
+      "MI"
+    ],
+    "TRIM": [
+      "TR"
+    ],
+    "EXTEND": [
+      "EX"
+    ],
+    "OFFSET": [
+      "O"
+    ],
+    "FILLET": [
+      "F"
+    ],
+    "CHAMFER": [
+      "CHA"
+    ],
+    "LAYER": [
+      "LA"
+    ],
+    "DIM": [
+      "DIMENSION"
+    ],
+    "HATCH": [
+      "H"
+    ],
+    "ZOOM": [
+      "Z"
+    ],
+    "UNDO": [
+      "U"
+    ]
+  },
+  "unimplementedCommandsMustReportStatus": true
+}
