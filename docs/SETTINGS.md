@@ -1,7 +1,5 @@
-# Settings and profiles
+# Settings and options
 
-Preferences include theme, drawing units, autosave interval, undo history, grid visibility, object snaps, polar tracking, ortho, dynamic input, selection highlighting, grips and destructive-action confirmation.
+Settings include theme, units, autosave seconds, undo stack size, grid visibility, snaps, ortho, polar tracking, dynamic input and destructive-action confirmation. The schema is `config/settings.schema.json`; the localStorage model is `src/app/Settings.ts`.
 
-Validate imported profiles against `config/settings.schema.json`. Store named workspace profiles separately from project drawings. Never put credentials or API tokens in settings JSON.
-
-`src/app/Settings.ts` provides default/load/save/reset functionality. The visual settings dialog and wiring all preferences into the editor remain roadmap items.
+The full preferences dialog and wiring every setting to viewport/input behavior are not complete.
