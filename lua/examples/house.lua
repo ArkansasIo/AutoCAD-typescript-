@@ -1,5 +1,5 @@
--- Example for future sandboxed TypeCAD Lua host.
-local TypeCAD=require("typecad") -- only a whitelisted virtual module may resolve
+-- Example for the future TypeCAD Lua host; module must be allowlisted.
+local TypeCAD=require("typecad")
 local d=TypeCAD:new("Simple House")
 d:add_layer("WALLS","#dbe7f3");d:add_layer("ROOF","#f4b860")
 d:rectangle(0,0,120,80,"WALLS")
