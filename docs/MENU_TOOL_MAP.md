@@ -1,4 +1,4 @@
-# Menu/submenu and tool map
+# Menu and tool map
 
 - **File:** New, Open JSON, Save JSON, Save As (planned), Export DXF, Options.
 - **Edit:** Undo, Redo, Select, Select All (planned).
@@ -11,4 +11,4 @@
 - **Window:** Workspace Profiles, View Manager.
 - **Help:** About, Feature Matrix, Documentation.
 
-Menu data lives in `src/commands/menus.ts`; tool data in `src/commands/tools.ts`. The visible template has basic handlers and reports planned items honestly.
+Definitions live in `src/commands/menus.ts` and `src/commands/tools.ts`. Roadmap actions are clearly identified as not implemented.
