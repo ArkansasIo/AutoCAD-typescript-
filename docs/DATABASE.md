@@ -1,5 +1,5 @@
 # MySQL database
 
-Apply `db/schema.sql` to MySQL 8. The schema defines users, projects, drawings, layers, entities and drawing revision snapshots. `server/` is an API foundation with a database health check and project drawing list endpoint only.
+Apply `db/schema.sql` on MySQL 8. Tables define users, projects, drawings, layers, entities and revision snapshots. The Express API currently includes a health check and a project drawing-list route.
 
-Before public deployment, add authentication, project-level authorization, schema validation, limits, audit logging, transactional CRUD/revision endpoints and backups. GitHub Pages hosts static assets only; the API and MySQL must be separately hosted. Never expose database credentials to frontend code.
+Before public use, add authentication, project-level authorization, schema validation, rate limits, audit logs, transactional CRUD and backups. GitHub Pages is only a static client; host API/MySQL separately and never expose database credentials in browser code.
