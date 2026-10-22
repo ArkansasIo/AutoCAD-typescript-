@@ -1,21 +1,18 @@
-# Terminal command roadmap
+# Terminal reference
 
-| Command | Function | Status |
+| Command | Description | Status |
 |---|---|---|
-| HELP | List commands | Planned |
-| CLEAR | Clear prompt history | Planned |
-| HISTORY | View history | Planned |
-| SETVAR | Change approved variables | Planned |
-| OPTIONS | Open preferences | Planned |
-| SCRIPT | Run TCS source | Starter grammar |
-| LUA | Run sandboxed Lua file | VM not integrated |
-| LOADAPP | Load signed plugin | Planned |
-| EXPORTDXF | Export drawing subset | Starter |
-| SAVEJSON / OPENJSON | Save/load JSON drawing | Starter |
-| LAYER | Manage layers | Basic |
-| LINE / CIRCLE / RECTANGLE | Draw primitives | Basic |
-| REGEN | Rebuild viewport | Planned |
-| DIAGNOSE | Check app/API/database | Planned |
-| WOLFMATH | Inspect math adapter | Planned |
-
-Each command needs argument schemas, permissions, side-effect documentation, tests, error feedback and undo policy.
+| HELP / ? | Show command catalog | Basic |
+| LINE / L | Draw line | Basic |
+| CIRCLE / C | Draw circle | Basic |
+| RECTANGLE / REC | Draw rectangle | Basic |
+| LAYER / LA | Add/select layers | Basic |
+| PLANE / WORKPLANE | Add/select workplane metadata | Basic |
+| UNDO / REDO | Navigate model history | Basic |
+| SAVEJSON / OPENJSON | Save/load JSON drawing | Basic |
+| EXPORT / EXPORTDXF | Limited DXF output | Basic subset |
+| SCRIPT / TCS | Run TCS statements | Prototype |
+| LUA | Run Lua script | VM not integrated |
+| MOVE/COPY/ROTATE/SCALE | Geometry transforms | Planned |
+| TRIM/EXTEND/OFFSET | Geometry edits | Planned |
+| DIM/TEXT/HATCH/BLOCK/XREF/PLOT | Drafting/output functions | Planned |
